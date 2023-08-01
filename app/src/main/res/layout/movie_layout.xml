@@ -24,7 +24,7 @@
         android:textSize="30sp"
         android:text="@string/movie_name"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor = "?android:textColorPrimary"
         android:textStyle="bold"
         android:layout_marginTop="5dp"/>
 

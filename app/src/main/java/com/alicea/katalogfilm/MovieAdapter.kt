@@ -35,6 +35,8 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
         Glide.with(holder.itemView)
             .load("https://image.tmdb.org/t/p/w500"+movieList[position].poster_path)
             .into(holder.binding.movieImage)
-        holder.binding.movieName.text = movieList[position].title
+        val date: List<String> = movieList[position].release_date.split("-")
+        val title = movieList[position].title + " (" + date[0] + ")"
+        holder.binding.movieName.text = title
     }
 }
