@@ -22,13 +22,13 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_movies"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingHorizontal="8dp"
             tools:listitem="@layout/movie_layout"/>
 
     </androidx.core.widget.NestedScrollView>
